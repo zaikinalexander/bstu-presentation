@@ -20,7 +20,6 @@ $rectors = rector_entries();
     <section class="presentation-hero presentation-hero--overview presentation-hero--history">
         <div>
             <h1>Ректоры<br>БГТУ им. В.Г. Шухова</h1>
-            <p>Раздел посвящён руководителям университета, определявшим его развитие в разные периоды.</p>
         </div>
         <div class="presentation-hero__actions">
             <a class="button button--ghost" href="/index.php">На главную</a>
@@ -28,9 +27,21 @@ $rectors = rector_entries();
     </section>
 
     <section class="section section--compact">
+        <nav class="rectors-nav" aria-label="Навигация по ректорам">
+            <?php foreach ($rectors as $rector): ?>
+                <a class="rector-jump" href="#rector-<?= e($rector['slug']) ?>">
+                    <img src="<?= e($rector['image']) ?>" alt="<?= e($rector['name']) ?>">
+                    <strong><?= e($rector['name']) ?></strong>
+                    <span><?= e($rector['nav_meta']) ?></span>
+                </a>
+            <?php endforeach; ?>
+        </nav>
+    </section>
+
+    <section class="section section--compact">
         <div class="rectors-list">
             <?php foreach ($rectors as $rector): ?>
-                <article class="person-sheet rector-card">
+                <article id="rector-<?= e($rector['slug']) ?>" class="person-sheet rector-card">
                     <div class="person-summary">
                         <div class="person-summary__media">
                             <img src="<?= e($rector['image']) ?>" alt="<?= e($rector['name']) ?>">

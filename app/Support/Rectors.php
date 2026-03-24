@@ -6,7 +6,9 @@ function rector_entries(): array
 {
     return [
         [
+            'slug' => 'ivakhnyuk',
             'name' => 'В.А. Ивахнюк',
+            'nav_meta' => '1970–1982, 1992–2000',
             'summary' => 'Вилен Алексеевич Ивахнюк (1929–2009) — ректор БТИСМ им. И. А. Гришманова, БелГТАСМ (1970–1982, 1992–2000). С 2000 по 2001 год — президент академии.',
             'image' => '/assets/img/rectors/ivakhnyuk.jpg',
             'sections' => [
@@ -43,7 +45,9 @@ function rector_entries(): array
             ],
         ],
         [
+            'slug' => 'miroshnichenko',
             'name' => 'И.И. Мирошниченко',
+            'nav_meta' => '1982–1992',
             'summary' => 'Иван Иванович Мирошниченко (1937– ) — ректор БТИСМ им. И.А. Гришманова с 1982 по 1992 год.',
             'image' => '/assets/img/rectors/miroshnichenko.jpg',
             'sections' => [
@@ -72,7 +76,9 @@ function rector_entries(): array
             ],
         ],
         [
+            'slug' => 'gridchin',
             'name' => 'А.М. Гридчин',
+            'nav_meta' => '2000–2010',
             'summary' => 'Анатолий Митрофанович Гридчин (21.06.1940 – 10.04.2023) — ректор БелГТАСМ, БГТУ им. В.Г. Шухова с 2000 по 2010 год. С 2010 по 2023 год — президент университета.',
             'image' => '/assets/img/rectors/gridchin.jpg',
             'sections' => [
@@ -112,7 +118,9 @@ function rector_entries(): array
             ],
         ],
         [
+            'slug' => 'glagolev',
             'name' => 'С.Н. Глаголев',
+            'nav_meta' => 'с 2010 года',
             'summary' => 'Сергей Николаевич Глаголев — ректор БГТУ им. В.Г. Шухова с 2010 года по настоящее время.',
             'image' => '/assets/img/rectors/glagolev.jpg',
             'sections' => [
