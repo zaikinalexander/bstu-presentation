@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+
+/storage/database.sqlite
+/public/storage/database.sqlite
+/public/uploads/manual/
+/public/uploads/presentations/
+
+/deploy/*.tar.gz
+/tmp/
+/Вывод Терминала.txt
+/Вывод Терминала 2.txt
+/bstupresent_*.zip

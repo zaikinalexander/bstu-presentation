@@ -1,0 +1,39 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page111179656.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://presentation\.bstu\.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.presentation.bstu.ru [NC]
+RewriteRule ^(.*)$ https://presentation\.bstu\.ru/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/project20632756/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^header$ page111183746.html [NC]
+RewriteRule ^header/$ page111183746.html [NC]
+
+RewriteRule ^footer$ page111184296.html [NC]
+RewriteRule ^footer/$ page111184296.html [NC]
+
+RewriteRule ^istoriya_sozdaniya$ page111185956.html [NC]
+RewriteRule ^istoriya_sozdaniya/$ page111185956.html [NC]
+
+RewriteRule ^stroitelstvo_i_blagoustroistvo$ page111186596.html [NC]
+RewriteRule ^stroitelstvo_i_blagoustroistvo/$ page111186596.html [NC]
+
+RewriteRule ^obrazovatelnaya_i_nauchnnaya_deyatelnost$ page111191956.html [NC]
+RewriteRule ^obrazovatelnaya_i_nauchnnaya_deyatelnost/$ page111191956.html [NC]
+
+RewriteRule ^pochetnie_doktora$ page111197356.html [NC]
+RewriteRule ^pochetnie_doktora/$ page111197356.html [NC]
+
+RewriteRule ^pochetnie_professora$ page111205716.html [NC]
+RewriteRule ^pochetnie_professora/$ page111205716.html [NC]
+
+
