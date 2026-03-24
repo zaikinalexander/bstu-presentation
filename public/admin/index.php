@@ -20,7 +20,6 @@ $error = flash('error');
     <link rel="stylesheet" href="<?= e(asset('assets/css/app.css')) ?>">
 </head>
 <body class="page-admin">
-<?= render_environment_banner() ?>
 <main class="shell admin-shell">
     <section class="admin-header">
         <div>
@@ -39,12 +38,6 @@ $error = flash('error');
         <div class="section__eyebrow">Разделы администрирования</div>
         <h2>Персоналии и презентации</h2>
         <p>В этой админке можно управлять карточками почётных докторов и профессоров, а также отдельными слайдами презентационных разделов. Публичные адреса сайта при этом остаются прежними.</p>
-        <?php if (!is_production_environment()): ?>
-            <div class="environment-note environment-note--inline">
-                <strong><?= e(environment_label()) ?>-контур</strong>
-                <p><?= e(environment_description()) ?> Проверяйте домен перед публикацией изменений.</p>
-            </div>
-        <?php endif; ?>
     </div>
 
     <?php if ($success): ?>

@@ -38,18 +38,11 @@ $success = flash('success');
     <link rel="stylesheet" href="<?= e(asset('assets/css/app.css')) ?>">
 </head>
 <body class="page-admin-login">
-<?= render_environment_banner() ?>
 <main class="shell admin-login">
     <form class="admin-panel" method="post">
         <div class="section__eyebrow">Административный вход</div>
         <h1>Редактирование разделов</h1>
         <p>Используйте учётные данные из файла `.env`. После первого запуска пароль лучше сменить.</p>
-        <?php if (!is_production_environment()): ?>
-            <div class="environment-note">
-                <strong><?= e(environment_label()) ?>-контур</strong>
-                <p><?= e(environment_description()) ?> Текущий адрес: <?= e(app_url_host()) ?>.</p>
-            </div>
-        <?php endif; ?>
 
         <?php if ($error): ?>
             <div class="flash flash--error"><?= e($error) ?></div>

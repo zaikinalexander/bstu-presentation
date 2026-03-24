@@ -14,6 +14,13 @@ $cards = [
     ],
     [
         'badge' => 'Раздел сайта',
+        'title' => 'Ректоры',
+        'description' => 'Откройте раздел с карточками ректоров университета и материалами об их биографии, научной и управленческой деятельности.',
+        'route' => '/rektory/',
+        'meta' => '4 карточки',
+    ],
+    [
+        'badge' => 'Раздел сайта',
         'title' => 'Почётные доктора и профессора',
         'description' => 'Откройте раздел с почётными докторами и профессорами БГТУ им. В.Г. Шухова и перейдите к соответствующему каталогу.',
         'route' => '/pochetnie_doktora_i_professora/',
@@ -28,11 +35,10 @@ $title = config('app.name');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= e($title) ?></title>
-    <meta name="description" content="Презентационный сайт БГТУ им. В.Г. Шухова с разделами о почётных докторах и почётных профессорах.">
+    <meta name="description" content="Презентационный сайт БГТУ им. В.Г. Шухова с разделами об истории университета, ректорах, почётных докторах и почётных профессорах.">
     <link rel="stylesheet" href="<?= e(asset('assets/css/app.css')) ?>">
 </head>
 <body class="page-home">
-<?= render_environment_banner() ?>
 <header class="hero">
     <div class="hero__backdrop"></div>
     <div class="hero__content shell">

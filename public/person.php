@@ -24,7 +24,6 @@ if ($person === null) {
     <link rel="stylesheet" href="<?= e(asset('assets/css/app.css')) ?>">
 </head>
 <body class="page-person<?= $layout === 'compact' ? ' page-person--compact' : '' ?>">
-<?= render_environment_banner() ?>
 <main class="shell person-page">
     <div class="person-page__topbar">
         <a class="button button--ghost" href="<?= e($catalogPath) ?>?type=<?= e($type) ?>">Назад к каталогу</a>

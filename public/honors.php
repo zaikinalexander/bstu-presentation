@@ -39,7 +39,6 @@ $title = type_label($type) . ' | ' . config('app.name');
     <link rel="stylesheet" href="<?= e(asset('assets/css/app.css')) ?>">
 </head>
 <body class="page-catalog<?= $layout === 'compact' ? ' page-catalog--compact' : '' ?>">
-<?= render_environment_banner() ?>
 <div class="subhero">
     <div class="shell subhero__content">
         <a class="button button--ghost" href="/index.php">На главную</a>

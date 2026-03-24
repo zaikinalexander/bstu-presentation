@@ -10,6 +10,7 @@ use App\Support\Env;
 require_once __DIR__ . '/Support/helpers.php';
 require_once __DIR__ . '/Support/Env.php';
 require_once __DIR__ . '/Support/PresentationCatalog.php';
+require_once __DIR__ . '/Support/Rectors.php';
 require_once __DIR__ . '/Core/Database.php';
 require_once __DIR__ . '/Core/Auth.php';
 require_once __DIR__ . '/Repositories/PersonRepository.php';

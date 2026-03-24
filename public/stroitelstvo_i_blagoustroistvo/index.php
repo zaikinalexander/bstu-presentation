@@ -16,7 +16,6 @@ $slides = $section['slides'];
     <link rel="stylesheet" href="<?= e(asset('assets/css/app.css')) ?>">
 </head>
 <body class="page-presentation">
-<?= render_environment_banner() ?>
 <main class="shell">
     <section class="presentation-hero presentation-hero--history" style="--hero-image:url('<?= e(\App\Support\PresentationCatalog::heroUrl($section['hero'])) ?>')">
         <div>

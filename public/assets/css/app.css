@@ -37,41 +37,6 @@ body {
         linear-gradient(180deg, #f8fbff 0%, #ecf3fa 100%);
 }
 
-.environment-banner {
-    position: fixed;
-    top: 18px;
-    right: 18px;
-    z-index: 90;
-    max-width: min(420px, calc(100vw - 36px));
-    display: grid;
-    gap: 6px;
-    padding: 14px 16px;
-    border: 1px solid rgba(123, 38, 26, 0.18);
-    border-radius: 18px;
-    background: rgba(255, 245, 232, 0.96);
-    box-shadow: 0 18px 36px rgba(122, 67, 24, 0.16);
-    backdrop-filter: blur(12px);
-}
-
-.environment-banner__label {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
-    min-height: 30px;
-    padding: 0 12px;
-    border-radius: 999px;
-    background: #a33c16;
-    color: #fff;
-    font-size: 0.82rem;
-    letter-spacing: 0.12em;
-}
-
-.environment-banner__text {
-    font-size: 0.94rem;
-    line-height: 1.4;
-    color: #6f381a;
-}
-
 img {
     display: block;
     max-width: 100%;
@@ -193,30 +158,6 @@ a {
 .button--danger {
     color: #fff;
     background: var(--danger);
-}
-
-.environment-note {
-    margin-top: 18px;
-    padding: 18px 20px;
-    border: 1px solid rgba(163, 60, 22, 0.16);
-    border-radius: var(--radius-md);
-    background: rgba(255, 244, 230, 0.92);
-    color: #6f381a;
-}
-
-.environment-note strong {
-    display: block;
-    margin-bottom: 6px;
-    font-size: 0.92rem;
-    letter-spacing: 0.08em;
-}
-
-.environment-note p {
-    margin: 0;
-}
-
-.environment-note--inline {
-    margin-bottom: 0;
 }
 
 .section {
@@ -915,6 +856,50 @@ a {
     padding-top: 12px;
 }
 
+.rectors-list {
+    display: grid;
+    gap: 28px;
+}
+
+.rector-card {
+    overflow: hidden;
+}
+
+.rector-card .person-summary {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+.rector-card__content {
+    margin-top: 0;
+    border-top: 1px solid rgba(25, 70, 132, 0.1);
+}
+
+.rector-card__blocks {
+    display: grid;
+    gap: 28px;
+}
+
+.rector-block h3 {
+    margin: 0 0 14px;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+.rector-awards {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding-left: 22px;
+}
+
+.rector-awards li {
+    line-height: 1.7;
+}
+
 .empty-state {
     padding: 54px 24px;
     text-align: center;
@@ -1060,14 +1045,6 @@ a {
 }
 
 @media (max-width: 860px) {
-    .environment-banner {
-        top: auto;
-        right: 12px;
-        bottom: 12px;
-        left: 12px;
-        max-width: none;
-    }
-
     .shell {
         width: min(100vw - 24px, 1360px);
     }
